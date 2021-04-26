@@ -9,9 +9,9 @@
 
 ### Introduction
 
-Lumen Network Storage 1.0 (LNS) is a storage offering providing customers storage volumes for storing their data. This one product offers NAS Volume (CIFS, NFS) and SAN LUNS (iSCSI) storage. Storage is available in two tiers, Performance and Standard, with Performance offering higher performance. LNS offers customers the option of replication of their storage volumes to another location.
+Lumen Network Storage 1.0 (LNS) is a fully managed storage service providing customers storage volumes to present to compute instances anywhere on the global Lumen Network. LNS is multi-protocol storage, offering File (CIFS, NFS), Block (iSCSI) and Object storage, delivered in either multi-tenant or dedicated hardware instance types. Each volume can can be configured with one of two Service Tiers (Standard or Performance) and one of two Service Types (Fixed or Adaptive).
 
-The customer will create one or more LNS nodes during the provisioning process. The volumes they create are exported from these nodes via the storage protocol chosen for the individual volume. A LNS node is a storage virtual machine (SVM).
+During the provisioning process for Block/File storage protocols, a private Storage Node is created in a chosen physical location. A LNS Storage Node is a private virtual storage device that is dedicated to, and only accessible or visible by, an individual customer. A Storage Node is required before volumes can be created to present to a compute instance and storing data. 
 
 ### Network Storage Dashboard
 
